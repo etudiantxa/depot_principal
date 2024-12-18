@@ -4,6 +4,13 @@ function increaseCount() {
   displayCount(); // Affiche le compte
   checkCountValue(); // Vérifier la valeur du count et afficher les messages
 }
+function reinitialiseCount(){
+    let count = 0;
+    document.getElementById('countDisplay').innerHTML=count;
+    if (count === 0) {
+        alert("le compteur de followers a été réinitialisé")
+    }
+}
 function checkCountValue(){
     if (count === 10) {
         alert("Votre publication Instagram a gagné 10 abonnés")
